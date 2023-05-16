@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ricky Ly</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media-queries.css" />
+  </head>
+
+  <body>
+	<!-- NAVBAR -->
+    <nav id="desktop-nav">
+      <div class="logo">Ricky Ly</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Ricky Ly</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+	<!-- PROFILE -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Ricky Ly profile picture" class="profile-pic"/>
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Ricky Ly</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/rickyly1/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/rickyly1'"
+          />
+        </div>
+      </div>
+    </section>
+
+	<!-- ABOUT ME -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>University of California, Irvine</h3>
+              <p>B.S. in Informatics<br />Specialization in Human-Computer Interaction</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a recent graduate (March 2023) from UC Irvine actively seeking
+              oppurtunities to apply and evolve my skills as a developer. I am deeply motivated, 
+              endlessly curious, open-minded, and take pride in my ability to handle 
+              feedback constructively. When I'm not in front of a computer screen, 
+              you can find me watching basketball, playing video games, 
+              or handing out with my cats. Please feel free to contact me 
+              below to discuss any oppurtunities!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+	<!-- SKILLS -->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Languages/Libraries</h2>
+            <div class="article-container">
+              <article>
+                <div>
+                  <img
+                  src="./assets/html.png"
+                  alt="Experience icon"
+                  class="icon"/>
+                  <p>HTML</p>
+                </div>
+              </article>
+
+              <article>
+                <div>
+                  <img
+                  src="./assets/css.svg"
+                  alt="Experience icon"
+                  class="icon"/>
+                  <p>CSS</p>
+                </div>
+              </article>
+
+              <article>
+                
+                <div>
+                  <img
+                  src="./assets/javascript.png"
+                  alt="Experience icon"
+                  class="icon"/>
+                  <p>JavaScript</p>
+                </div>
+              </article>
+              <article>
+                
+                <div>
+                  <img
+                  src="./assets/typescript.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                  <p>TypeScript</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <img
+                  src="./assets/sass.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                  <p>SASS</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <img
+                  src="./assets/java.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                  <p>Java</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <img
+                  src="./assets/python.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                  <p>Python</p>
+                </div>
+              </article>
+        <article>
+                <div>
+                  <img
+                  src="./assets/cplusplus.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                  <p>C++</p>
+                </div>
+              </article>
+        <article>
+                <div>
+                  <img
+                  src="./assets/nodejs.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                  <p>Node.js</p>
+                </div>
+              </article>
+        <article>
+                <div>
+                  <img
+                  src="./assets/angular.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                  <p>Angular</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Applications</h2>
+            <div class="article-container">
+              
+              <article>
+                <div>
+                  <img
+                  src="./assets/figma.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                  <p>Figma</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <img
+                  src="./assets/adobexd.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                  <p>Adobe XD</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <img
+                  src="./assets/github.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                  <p>GitHub</p>
+                </div>
+              </article>
+        <article>
+                <div>
+                  <img
+                  src="./assets/bootstrap.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                  <p>Bootstrap Studio</p>
+                </div>
+              </article>
+        <article>
+                <div>
+                  <img
+                  src="./assets/vscode.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                  <p>VSCode</p>
+                </div>
+              </article>
+        <article>
+                <div>
+                  <img
+                  src="./assets/jira.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                  <p>Atlassian/Jira</p>
+                </div>
+              </article>
+        <article>
+                <div>
+                  <img
+                  src="./assets/slack.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                  <p>Slack</p>
+                </div>
+              </article>
+        <article>
+                <div>
+                  <img
+                  src="./assets/discord.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                  <p>Discord</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+	<!-- PROJECT -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/youredvisor.PNG" alt="YourEdvisor" class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title">YourEdvisor</h2>
+            <p class="experience-description">A college matriculation service designed and prototyped as part of my 
+              senior capstone project at UC Irvine. Implemented in HTML, CSS, and JavaScript.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/rickyly1/youredvisor'">
+                GitHub
+              </button>
+              <!--
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                Live Demo
+              </button>-->
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/youtubeclone.png" alt="YouTube Clone" class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title">YouTube Clone</h2>
+            <p class="experience-description">This recreation of YouTube's front page was done to practice important
+              techniques such as Flexbox, CSS grid, the box model, and more. Implemented in HTML and CSS.
+            </p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/rickyly1/YouTube-Page-Clone'">
+                GitHub
+              </button>
+              
+              <a href="./live-demos/youtube-copy/youtube.html" target="_blank">
+                <button class="btn btn-color-2 project-btn">
+                  Live Demo
+                </button>
+              </a>
+
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/textedit.png" alt="Project 3" class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title">Text Editor</h2>
+            <p class="experience-description">A text editor with common features such as changing font style and sizes, 
+              undo and redo, and italicizing/bolding. Implemented in Java with the Swing GUI toolkit.
+            </p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/rickyly1/Java-Swing-Text-Editor'">
+                GitHub
+              </button>
+              <!--
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                Live Demo
+              </button>-->
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/todolist.png" alt="Project 4" class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title">ToDo List App</h2>
+            <p class="experience-description">Manage daily tasks and chores by adding, removing,
+               editing, and deleting tasks. Utilizes local storage to retain tasks. Implemented in 
+              HTML, CSS, and JavaScript.
+            </p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/rickyly1/ToDo-List'">
+                GitHub
+              </button>
+              
+              <a href="./live-demos/ToDo-List/index.html" target="_blank">
+                <button class="btn btn-color-2 project-btn">
+                  Live Demo
+                </button>
+              </a>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+	<!-- CONTACT -->
+    <section id="contact">
+      <p class="section__text__p1">
+        Get in Touch
+      </p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="mail icon" class="icon contact-icon email-icon">
+          <p><a href="mailto:lyr5@uci.edu">lyr5@uci.edu</a></p>
+        </div>
+      </div>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container link-icon">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+          <p><a href="https://www.linkedin.com/in/rickyly1/">Ricky Ly</a></p>
+        </div>
+      </div>
+    </section>
+
+  <script src="script.js"></script>
+  </body>
+</html>
