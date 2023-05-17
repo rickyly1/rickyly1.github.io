@@ -14,6 +14,8 @@
     #projects .details-container {
       max-width: 220px;
     }
+
+    
   }
 
 @media screen and (max-width: 1200px) {
@@ -171,5 +173,11 @@
 
   .profile-pic {
     height: 270px;
+  }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1399px) {
+  #contact {
+    margin-top: 700px;
   }
 }
