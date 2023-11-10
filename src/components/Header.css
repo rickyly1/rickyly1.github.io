@@ -1,0 +1,42 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-primary);
+    
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-large);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    text-underline-offset: 6px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: var(--font-size-md);
+    cursor: pointer;
+}
+
+nav.show {
+    display: flex;
+    flex-direction: column;
+}
