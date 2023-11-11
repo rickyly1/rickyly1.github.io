@@ -8,23 +8,25 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
+
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-ul {
+header ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
     gap: var(--spacing-large);
 }
 
-a {
+header a {
     text-decoration: none;
     color: black;
     position: relative;
     text-underline-offset: 6px;
 }
 
-a:hover {
+header a:hover {
     text-decoration: underline;
 }
 
@@ -32,11 +34,52 @@ a:hover {
     display: none;
     background: none;
     border: none;
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-xl);
     cursor: pointer;
 }
 
-nav.show {
-    display: flex;
-    flex-direction: column;
+@media (max-width: 768px) {
+    header {
+        justify-content: space-between;
+    }
+
+    header h1 {
+        display: block;
+        text-align: left;
+        margin-left: var(--spacing-large);
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 5px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.show {
+        display: block;
+    }
+
+    nav.show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 2px;
+        right: 63px;
+    }
+    
+    nav.show ul {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    nav.show li {
+        padding: 3px 12px;
+        text-align: center;
+        border: 1px black solid;
+    }
 }

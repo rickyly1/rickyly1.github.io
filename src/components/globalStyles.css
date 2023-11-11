@@ -24,3 +24,7 @@ body {
     color: black;
     background-color: var(--color-primary);
 }
+
+* {
+    scroll-behavior: smooth;
+}

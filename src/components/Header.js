@@ -12,7 +12,7 @@ function Header() {
     return (
         <header>
             <div>
-                <h1 className={showMenu ? 'hidden' : ''}>Ricky Ly</h1>
+                <h1 className={showMenu ? 'hidden' : ''}>R.LY</h1>
             </div>
 
             <button onClick={toggleMenu} className="hamburger">&#9776;</button>

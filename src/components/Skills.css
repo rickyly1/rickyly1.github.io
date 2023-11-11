@@ -1,0 +1,94 @@
+.skills-container {
+    display: block;
+    width: 100vw;
+    height: 90vh;
+
+}
+
+.skills h1 {
+    font-size: var(--font-size-xl);
+    text-align: center;
+    margin-bottom: var(--spacing-large);
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.skills {
+    overflow: hidden;
+    white-space: nowrap;
+    justify-self: center;
+    align-self: center;
+}
+
+.window {
+    width: 70vw;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+.window:before,
+.window:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.window:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), var(--color-primary));
+}
+
+.window:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), var(--color-primary));
+}
+
+.logos-slide {
+    display: inline-block;
+    padding: 40px 0;
+    animation: 18s slide infinite linear;
+    background-color: var(--color-primary);
+}
+
+.logos-slide:hover {
+    animation-play-state: paused;
+}
+
+.logos-slide img {
+    height: 50px;
+    margin: 0 40px;
+}
+
+@media (max-width: 768px) {
+    .window {
+        width: 100vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-container {
+
+    }
+
+    .skills h1 {
+        font-size: var(--font-size-lg)
+    }
+
+    .window:before,
+    .window:after {
+        width: 100px;
+        height: 100%;
+    }
+}
