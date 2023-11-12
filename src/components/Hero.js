@@ -20,7 +20,7 @@ function Hero() {
                     </div>
 
                     <div className="button-container">
-                        <a href={Resume} target="_blank" id="cv-link" rel="noreferrer">Download CV</a>
+                        <a href={Resume} target="_blank" id="cv-link" rel="noreferrer">My Resume</a>
 
                         <a href="https://www.linkedin.com/in/rickyly1/" className="logo-link" target="_blank" rel="noreferrer"><img src={LinkedInLogo} alt="LinkedIn Logo"/></a>
                         
