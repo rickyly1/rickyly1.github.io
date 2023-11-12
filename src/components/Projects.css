@@ -7,12 +7,13 @@
 }
 
 .project-container h1 {
-    font-size: var(--font-size-xl)
+    font-size: var(--font-size-xl);
+    text-align: center;
 }
 
 .card-container {
-    display: flex;
-    flex-direction: row;
+    display: inline-flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: var(--spacing-large);
 }
@@ -31,7 +32,7 @@
 
 .preview {
     max-width: 320px;
-    max-height: 250px;
+    height: 200px;
     object-fit: cover;
 }
 
@@ -81,4 +82,16 @@
     display: inline;
     vertical-align: middle;
     margin-right: 5px;
+}
+
+#project-call {
+    text-align: center;
+    margin-top: 25px;
+}
+
+@media (max-width: 1280px) {
+    .project-container {
+        height: auto;
+        padding-bottom: 30vh
+    }
 }

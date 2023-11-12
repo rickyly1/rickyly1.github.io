@@ -46,11 +46,15 @@
     .about-text p {
         width: 50vw;
     }
+
+    .about-container {
+        height: 80vh;
+    }
 }
 
 @media (max-width: 768px) {
     .about-container {
-        height: 120vh;
+        height: 110vh;
     }
 
     .about {
@@ -73,5 +77,13 @@
 @media (max-width: 480px) {
     .about-container {
         height: 130vh;
+    }
+
+    .about {
+        max-width: 97vw;
+    }
+
+    .about p {
+        max-width: 93%;
     }
 }

@@ -1,8 +1,7 @@
 .skills-container {
     display: block;
     width: 100vw;
-    height: 90vh;
-
+    height: 80vh;
 }
 
 .skills h1 {
@@ -26,6 +25,7 @@
     white-space: nowrap;
     justify-self: center;
     align-self: center;
+    padding-top: 10vh;
 }
 
 .window {
@@ -79,7 +79,7 @@
 
 @media (max-width: 480px) {
     .skills-container {
-
+        max-width: 100vw;
     }
 
     .skills h1 {
