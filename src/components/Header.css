@@ -51,9 +51,7 @@ header nav a:hover {
 
     .hamburger {
         display: block;
-        position: absolute;
-        right: 10px;
-        top: 5px;
+        margin-right: var(--spacing-medium);
     }
 
     nav {
