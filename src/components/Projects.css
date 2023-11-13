@@ -90,6 +90,12 @@
     margin-top: 25px;
 }
 
+#project-call a {
+    color: black;
+    text-underline-offset: 6px;
+    font-style: italic;
+}
+
 @media (max-width: 1280px) {
     .project-container {
         height: auto;

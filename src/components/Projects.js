@@ -54,7 +54,7 @@ function Projects() {
                 </div>
             </div>
 
-            <p id='project-call'>Check out some of my other works at <a href="https://github.com/rickyly1" target='_blank' rel='noreferrer'>my Github</a>!</p>
+            <p id='project-call'>Check out some of my other work at <a href="https://github.com/rickyly1" target='_blank' rel='noreferrer'>my Github</a></p>
         </div>
     );
 }
