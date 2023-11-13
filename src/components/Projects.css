@@ -67,6 +67,10 @@
     transition: background-color, color 0.3s ease-in-out;
 }
 
+.card-subtext a:visited {
+    color: black;
+}
+
 .card-subtext a:hover {
     background-color: black;
     color: var(--color-primary);
