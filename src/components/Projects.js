@@ -10,7 +10,7 @@ import ToDo from './assets/todolist.PNG';
 
 function Projects() {
     return (
-        <div className="project-container">
+        <div className="project-container" id='projects'>
             <h1>Some Recent Projects</h1>
 
             <div className="card-container">

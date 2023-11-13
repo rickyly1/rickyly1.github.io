@@ -81,5 +81,6 @@ header a:hover {
         padding: 3px 12px;
         text-align: center;
         border: 1px black solid;
+        background-color: var(--color-primary);
     }
 }

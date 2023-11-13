@@ -1,0 +1,9 @@
+.footer {
+    padding: 5vh 0;
+    width: 100vw;
+}
+
+.footer p {
+    width: 100%;
+    text-align: center;
+}

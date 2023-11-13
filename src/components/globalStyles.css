@@ -23,8 +23,10 @@ body {
     font-size: var(--font-size-base);
     color: black;
     background-color: var(--color-primary);
+    overflow-x: hidden;
 }
 
 * {
     scroll-behavior: smooth;
+    
 }

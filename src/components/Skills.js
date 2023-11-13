@@ -26,8 +26,8 @@ import DiscordLogo from './assets/discord.png';
 
 function Skills() {
     return (
-        <div className="skills-container" >
-            <div className="skills" id="skills">
+        <div className="skills-container" id="skills">
+            <div className="skills">
                 <h1>Some skills I know...</h1>
                 <div className="window">
                     <div className="logos-slide">
