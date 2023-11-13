@@ -36,6 +36,7 @@ header nav a:hover {
     border: none;
     font-size: var(--font-size-xl);
     cursor: pointer;
+    color: black;
 }
 
 @media (max-width: 768px) {
